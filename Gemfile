@@ -1,15 +1,13 @@
 source 'https://rubygems.org'
-
+ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.9'
 # Use sqlite3 as the database for Active Record
-group :development, :test do
-  #gem 'sqlite3'
   gem 'pg'
-end
+  
 group :production do
-  gem 'pg'
+  gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -34,6 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'puma', '~> 3.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
