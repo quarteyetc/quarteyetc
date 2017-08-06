@@ -8,7 +8,7 @@ gem 'rails', '4.2.9'
 
 group :production do
   gem 'rails_12factor'
-  gem 'fog'
+  gem 'fog-aws'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
